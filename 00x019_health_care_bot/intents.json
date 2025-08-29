@@ -1,0 +1,41 @@
+{
+  "intents": [
+    {
+      "tag": "Flu",
+      "patterns": [
+        "fever, cough, headache",
+        "high temperature, sore throat, body ache",
+        "shivering, tiredness, cough"
+      ],
+      "responses": [
+        "You may have the flu. It's recommended to rest and stay hydrated.",
+        "Your symptoms indicate a common flu. Please consider consulting a healthcare provider if they persist."
+      ]
+    },
+    {
+      "tag": "Common Cold",
+      "patterns": [
+        "runny nose, sneezing, mild fever",
+        "congestion, sore throat, headache",
+        "sneezing, watery eyes, stuffy nose"
+      ],
+      "responses": [
+        "It looks like you have a common cold. Drink plenty of fluids and take rest.",
+        "Your symptoms resemble a cold. Consider over-the-counter remedies and rest."
+      ]
+    },
+    {
+      "tag": "Allergy",
+      "patterns": [
+        "sneezing, itchy eyes, runny nose",
+        "rash, watery eyes, coughing",
+        "itchy skin, hives, sneezing"
+      ],
+      "responses": [
+        "Your symptoms may be due to an allergy. Avoid allergen exposure and consider antihistamines.",
+        "It could be an allergic reaction. If symptoms worsen, seek medical advice."
+      ]
+    }
+    // Add more diseases/patterns as needed
+  ]
+}
