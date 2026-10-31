@@ -1,5 +1,14 @@
 # Applied Machine Learning Repository
 
+<div align="center">
+
+[![CI Verified](https://github.com/Amanatar/machine-learning-project/actions/workflows/ci-verify.yml/badge.svg)](https://github.com/Amanatar/machine-learning-project/actions)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikit-learn&logoColor=white)](https://scikit-learn.org)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
+</div>
+
 End-to-end practical implementations of supervised, unsupervised, and deep learning workflows across tabular, NLP, and signal datasets.
 
 ## Project Directory
