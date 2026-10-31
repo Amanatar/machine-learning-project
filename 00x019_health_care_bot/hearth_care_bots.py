@@ -28,7 +28,10 @@ nltk.download('punkt_tab')
 
 lemmatizer = WordNetLemmatizer()
 
-intents = json.loads(open("/content/intents.json").read())
+intents_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "intents.json")
+if not os.path.exists(intents_path):
+    intents_path = "intents.json"
+intents = json.loads(open(intents_path, encoding="utf-8").read())
 
 words =[]
 classes =[]
@@ -109,7 +112,11 @@ if __name__ == '__main__':
     print("Bot is Running")
 
     recognizer = sr.Recognizer()
+    try:
     mic = sr.Microphone()
+except Exception as e:
+    print(f"Microphone unavailable ({e}); falling back to standard text input.")
+    mic = None
 
     engine = pyttsx3.init()
     rate = engine.getProperty('rate')
